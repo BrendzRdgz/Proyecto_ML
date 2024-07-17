@@ -274,3 +274,17 @@ def bubble_plot(df, col_x, col_y, col_size, scale = 1000):
     plt.show()
 
 
+def save_plot(figure, filename, folder="../img/graph"):
+    """
+    Guarda la figura en el directorio especificado.
+
+    :param figure: Figura de matplotlib a guardar.
+    :param filename: Nombre del archivo para guardar la imagen.
+    :param folder: Carpeta donde se guardará la imagen.
+    """
+    # Crear la carpeta si no existe
+    os.makedirs(folder, exist_ok=True)
+    # Guardar la figura
+    filepath = os.path.join(folder, filename)
+    figure.savefig(filepath)
+    print(f"Gráfico guardado en: {filepath}")
