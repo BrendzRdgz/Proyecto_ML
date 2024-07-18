@@ -26,15 +26,9 @@ else:
 st.markdown(
     """
     <style>
-    /* Fondo y estilo general */
-    .main {
-        background-color: #ffffff; /* Blanco */
-        color: #000000; /* Negro para el texto predeterminado */
-    }
-
     /* Botones */
     .stButton>button {
-        color: white;
+        color: blue;
         background-color: #87CEEB; /* Azul cielo */
         border: none;
         padding: 15px 32px;
@@ -49,22 +43,32 @@ st.markdown(
 
     /* Títulos */
     h1 {
-        color: #000080; /* Azul marino */
+        color: #FF7F50; /* Coral */
     }
     h2, h3, h4, h5, h6 {
         color: #87CEEB; /* Azul cielo */
     }
     /* Texto en los elementos de entrada y etiquetas */
     label, .stNumberInput label, .stSelectbox label, .stRadio label {
-        color: #000000; /* Negro */
+        color: #FFFFFF; /* Blanco */
     }
     /* Texto de predicción */
     .stWarning, .stSuccess {
-        color: #000000; /* Negro */
+        color: #FFFFFF !important; /* Blanco */
+        background-color: #f0f0f0; /* Gris claro */
+        padding: 8px; /* Ajustar el espacio alrededor del texto */
+        border-radius: 10px; /* Borde redondeado */
+        margin-top: 10px; /* Espacio superior */
+        margin-bottom: 10px; /* Espacio inferior */
     }
     /* Texto del selectbox en la barra lateral */
     .sidebar .selectbox label {
         color: #ffffff; /* Blanco */
+        background-color: #f0f0f0; /* Gris claro */
+        padding: 8px; /* Ajustar el espacio alrededor del texto */
+        border-radius: 10px; /* Borde redondeado */
+        margin-top: 10px; /* Espacio superior */
+        margin-bottom: 10px; /* Espacio inferior */
     }    
     </style>
     """, unsafe_allow_html=True
