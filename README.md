@@ -8,8 +8,8 @@ Early detection of heart failure aims to reduce medical costs and improve qualit
 
 ## Dataset
 The dataset used in this project contains medical records sourced from two Kaggle datasets:
-- [`heart_disease_uci.csv`] (https://www.kaggle.com/datasets/redwankarimsony/heart-disease-data/data)
-- [`heart.csv`](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction/data)
+- [heart_disease_uci.csv] (https://www.kaggle.com/datasets/redwankarimsony/heart-disease-data/data)
+- [heart.csv](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction/data)
 
 These datasets provide attributes such as age, cholesterol levels, maximum heart rate, and other relevant factors that can help in predicting heart disease.
 
