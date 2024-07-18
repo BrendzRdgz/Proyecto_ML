@@ -18,8 +18,10 @@ This repository includes the following directories:
 
 * data_sample: Contains the datasets used and modified during the project.
 * img: Includes all graphs generated during the EDA phase.
+* model: Includes the saved model.
 * process: Contains Jupyter notebooks for data cleaning (01_Cleaning.ipynb), exploratory data analysis (02_EDA.ipynb), dataset splitting and modeling * *(03_Split_Modeling.ipynb), and model testing (04_Models.ipynb).
 * results_notebook: Includes the summary document detailing the project's process, conclusions, and final insights.
+* streamlit: Online predictor in ES.
 
 ## Key Findings
 - **EDA Insights:** Significant correlations between certain health indicators and heart disease risk.
