@@ -11,7 +11,7 @@ from PIL import Image
 
 # Obtener el directorio actual y construir la ruta al archivo del modelo
 directorio_actual = os.getcwd()
-ruta_modelo = os.path.join(directorio_actual, 'model', 'best_rf_model.pkl')
+ruta_modelo = os.path.join(directorio_actual,'..', 'model', 'best_rf_model.pkl')
 
 # Verificar si el archivo existe
 if not os.path.isfile(ruta_modelo):
@@ -121,10 +121,10 @@ elif choice == "Predicción":
     # Crear formularios para ingresar datos del paciente
     st.markdown("### Información Básica del Paciente")
     age = st.number_input("Edad", 1, 120, help="Edad del paciente en años")
-    cholesterol = st.number_input("Colesterol", 1, 500, help="Nivel de colesterol del paciente en mg/dL")
-    maxhr = st.number_input("Frecuencia Cardíaca Máxima", 1, 220, help="Frecuencia cardíaca máxima alcanzada durante el ejercicio")
-    oldpeak = st.number_input("Depresión del ST", 0.0, 10.0, help="Descenso del segmento ST inducido por el ejercicio")
-    restingbp = st.number_input("Presión Arterial en Reposo", 1, 300, help="Presión arterial sistólica en reposo en mmHg")
+    cholesterol = st.number_input("Colesterol", min_value=100, max_value=500, value=200, help="Nivel de colesterol del paciente en mg/dL")
+    maxhr = st.number_input("Frecuencia Cardíaca Máxima", min_value=60, max_value=220, value=150, help="Frecuencia cardíaca máxima alcanzada durante el ejercicio")
+    oldpeak = st.number_input("Depresión del ST", min_value=0.0, max_value=10.0, value=1.0, step=0.1, help="Descenso del segmento ST inducido por el ejercicio")
+    restingbp = st.number_input("Presión Arterial en Reposo", min_value=50, max_value=200, value=120, help="Presión arterial sistólica en reposo en mmHg")
 
     st.markdown("### Información Adicional del Paciente")
     chestpain_type = st.selectbox(
